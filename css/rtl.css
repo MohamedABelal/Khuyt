@@ -1,0 +1,92 @@
+/* rtl.css (Handles LTR overrides since base is RTL) */
+
+/* The base style.css is already written with Arabic/RTL in mind. 
+   Here we handle specific overrides when body[dir="ltr"] is applied. */
+
+body[dir="ltr"] {
+  text-align: left;
+}
+
+body[dir="rtl"] {
+  text-align: right;
+}
+
+body[dir="ltr"] .navbar-brand {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+body[dir="rtl"] .navbar-brand {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+body[dir="ltr"] .btn-whatsapp i {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+body[dir="rtl"] .btn-whatsapp i {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+body[dir="ltr"] .btn i {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+body[dir="rtl"] .btn i {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+body[dir="ltr"] .product-specs th, 
+body[dir="ltr"] .product-specs td {
+  text-align: left;
+}
+
+body[dir="rtl"] .product-specs th, 
+body[dir="rtl"] .product-specs td {
+  text-align: right;
+}
+
+body[dir="ltr"] .contact-card-icon {
+  margin-right: 15px;
+  margin-left: 0;
+}
+
+body[dir="rtl"] .contact-card-icon {
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+body[dir="ltr"] .footer-contact i {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+body[dir="rtl"] .footer-contact i {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+body[dir="ltr"] .floating-whatsapp .tooltip {
+  right: 80px;
+  left: auto;
+}
+
+body[dir="rtl"] .floating-whatsapp .tooltip {
+  right: 80px;
+  left: auto;
+}
+
+body[dir="ltr"] .footer-links a:hover {
+  padding-left: 5px;
+  padding-right: 0;
+}
+
+body[dir="rtl"] .footer-links a:hover {
+  padding-right: 5px;
+  padding-left: 0;
+}

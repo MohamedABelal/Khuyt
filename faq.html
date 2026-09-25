@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة الشائعة | خيوط — Khuyut</title>
+    <meta name="description" content="أسئلة شائعة عن الطلب والشحن والاستبدال — خيوط شنط هاند ميد.">
+    <meta property="og:title" content="الأسئلة الشائعة | خيوط — Khuyut">
+    <meta property="og:description" content="أسئلة شائعة عن الطلب والشحن والاستبدال — خيوط شنط هاند ميد.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .faq-item { border-bottom: 1px solid var(--color-border); padding: 1.5rem 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-question { display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 700; font-size: 1.1rem; color: var(--color-text); }
+        .faq-question i { color: var(--color-primary); transition: transform 0.3s; }
+        .faq-item.active .faq-question i { transform: rotate(45deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out, margin-top 0.3s ease-out; color: var(--color-text-light); }
+        .faq-item.active .faq-answer { max-height: 500px; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <span class="brand-icon">🧶</span>
+                <span class="brand-name">خيوط</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link" data-key="home">الرئيسية</a></li>
+                <li><a href="shop.html" class="nav-link" data-key="shop">المنتجات</a></li>
+                <li><a href="about.html" class="nav-link" data-key="about">قصتنا</a></li>
+                <li><a href="contact.html" class="nav-link" data-key="contact">تواصلي معانا</a></li>
+            </ul>
+            <div class="nav-actions">
+                </button>
+                <a href="https://wa.me/201097595196" class="btn btn-whatsapp nav-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-key="orderNow">اطلبي دلوقتي</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header section animate-on-scroll">
+            <div class="container">
+                <h1 data-ar="الأسئلة الشائعة" data-en="FAQ">الأسئلة الشائعة</h1>
+                <div class="breadcrumb">
+                    <a href="index.html" data-key="home">الرئيسية</a> &gt; <span data-key="faq">الأسئلة الشائعة</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="section faq-section animate-on-scroll">
+            <div class="container" style="max-width: 800px;">
+                <div class="faq-list">
+                    <!-- Q1 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span data-ar="إزاي أطلب؟" data-en="How do I order?">إزاي أطلب؟</span>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-ar="اختاري الشنطة اللي عاجباكي واضغطي على زرار &quot;اطلبي على واتساب&quot; — هنرد عليكي في أسرع وقت ونأكدلك الطلب." data-en="Choose the bag you like and tap &quot;Order on WhatsApp&quot; — we'll reply quickly and confirm your order.">اختاري الشنطة اللي عاجباكي واضغطي على زرار "اطلبي على واتساب" — هنرد عليكي في أسرع وقت ونأكدلك الطلب.</p>
+                        </div>
+                    </div>
+                    <!-- Q2 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span data-ar="بتشحنوا لفين؟" data-en="Where do you ship?">بتشحنوا لفين؟</span>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-ar="بنشحن لكل محافظات مصر. التوصيل بيكون خلال 3-5 أيام عمل." data-en="We ship to all governorates in Egypt. Delivery takes 3-5 business days.">بنشحن لكل محافظات مصر. التوصيل بيكون خلال 3-5 أيام عمل.</p>
+                        </div>
+                    </div>
+                    <!-- Q3 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span data-ar="الشحن بكام؟" data-en="How much is shipping?">الشحن بكام؟</span>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-ar="تكلفة الشحن بتتحدد حسب المحافظة. كلمينا على واتساب وهنقولك التكلفة بالظبط." data-en="Shipping cost depends on your governorate. Message us on WhatsApp and we'll give you the exact cost.">تكلفة الشحن بتتحدد حسب المحافظة. كلمينا على واتساب وهنقولك التكلفة بالظبط.</p>
+                        </div>
+                    </div>
+                    <!-- Q4 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span data-ar="ممكن أطلب تصميم مخصوص؟" data-en="Can I request a custom design?">ممكن أطلب تصميم مخصوص؟</span>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-ar="أكيد! بنعمل تصميمات مخصوصة حسب طلبك. كلمينا على واتساب بالتفاصيل وهنبعتلك عرض سعر." data-en="Absolutely! We make custom designs to your specifications. Message us on WhatsApp with details and we'll send you a quote.">أكيد! بنعمل تصميمات مخصوصة حسب طلبك. كلمينا على واتساب بالتفاصيل وهنبعتلك عرض سعر.</p>
+                        </div>
+                    </div>
+                    <!-- Q5 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span data-ar="إيه طرق الدفع؟" data-en="What payment methods do you accept?">إيه طرق الدفع؟</span>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-ar="كاش عند الاستلام أو تحويل بنكي / فودافون كاش." data-en="Cash on delivery or bank transfer / Vodafone Cash.">كاش عند الاستلام أو تحويل بنكي / فودافون كاش.</p>
+                        </div>
+                    </div>
+                    <!-- Q6 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span data-ar="إيه سياسة الاستبدال والاسترجاع؟" data-en="What's your return/exchange policy?">إيه سياسة الاستبدال والاسترجاع؟</span>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-ar="بنقبل الاستبدال خلال 3 أيام من الاستلام بشرط إن المنتج يكون في حالته الأصلية. الاسترجاع متاح في حالة وجود عيب صناعة." data-en="We accept exchanges within 3 days of delivery, provided the product is in its original condition. Returns are available for manufacturing defects.">بنقبل الاستبدال خلال 3 أيام من الاستلام بشرط إن المنتج يكون في حالته الأصلية. الاسترجاع متاح في حالة وجود عيب صناعة.</p>
+                        </div>
+                    </div>
+                    <!-- Q7 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span data-ar="الشنطة بتاخد وقت قد إيه في الصنع؟" data-en="How long does it take to make a bag?">الشنطة بتاخد وقت قد إيه في الصنع؟</span>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-ar="لأن كل شنطة مصنوعة يدوياً، بتاخد من 3 لـ 7 أيام حسب التصميم. لو الموديل متوفر في الستوك، بنشحنه في نفس اليوم." data-en="Since every bag is handmade, it takes 3-7 days depending on the design. If the model is in stock, we ship the same day.">لأن كل شنطة مصنوعة يدوياً، بتاخد من 3 لـ 7 أيام حسب التصميم. لو الموديل متوفر في الستوك، بنشحنه في نفس اليوم.</p>
+                        </div>
+                    </div>
+                    <!-- Q8 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span data-ar="ممكن أشوف الشنطة قبل ما أشتري؟" data-en="Can I see the bag before buying?">ممكن أشوف الشنطة قبل ما أشتري؟</span>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-ar="بنبعتلك صور وفيديوهات حقيقية للشنطة على واتساب قبل ما تأكدي الطلب." data-en="We'll send you real photos and videos of the bag on WhatsApp before you confirm your order.">بنبعتلك صور وفيديوهات حقيقية للشنطة على واتساب قبل ما تأكدي الطلب.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section animate-on-scroll text-center" style="background-color: var(--color-bg); padding: 4rem 0;">
+            <div class="container">
+                <h3 style="margin-bottom: 1.5rem;" data-ar="لسه عندك سؤال؟" data-en="Still have a question?">لسه عندك سؤال؟</h3>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://wa.me/201097595196" class="btn btn-whatsapp" target="_blank" style="padding: 0.75rem 1.5rem; background: var(--color-whatsapp); color: var(--color-white); text-decoration: none; border-radius: 4px; font-weight: bold;">
+                        <i class="fab fa-whatsapp"></i> <span data-ar="كلمينا على واتساب" data-en="Chat with us on WhatsApp">كلمينا على واتساب</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <span class="brand-icon">🧶</span>
+                        <span class="brand-name">خيوط</span>
+                    </div>
+                    <p class="footer-desc" data-ar="شنط خرز وماكرامي مصنوعة يدوياً بحب في مصر. كل قطعة فريدة ومميزة." data-en="Handcrafted beaded & macramé bags made with love in Egypt. Each piece is unique.">شنط خرز وماكرامي مصنوعة يدوياً بحب في مصر. كل قطعة فريدة ومميزة.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-key="home">الرئيسية</a></li>
+                        <li><a href="shop.html" data-key="shop">المنتجات</a></li>
+                        <li><a href="about.html" data-key="about">قصتنا</a></li>
+                        <li><a href="faq.html" data-key="faq">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="contactUs">تواصلي معانا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/201097595196" target="_blank">واتساب</a></li>
+                        <li><i class="fab fa-instagram"></i> <a href="#" target="_blank">@khuyut.bags</a></li>
+                        <li><i class="fab fa-facebook"></i> <a href="#" target="_blank">Khuyut</a></li>
+                        <li><i class="far fa-envelope"></i> <a href="mailto:hello@khuyut.com">hello@khuyut.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="followUs">تابعينا</h4>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-key="madeWithLove">صنع بحب في مصر 🇪🇬</p>
+                <p data-key="copyright">© 2026 خيوط — جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/201097595196?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B!%20%D8%B9%D8%A7%D9%8A%D8%B2%D8%A9%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A3%D9%83%D8%AA%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA" class="floating-whatsapp" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="floating-tooltip" data-key="contactUs">تواصلي معانا</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/products.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                
+                // Close other open items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if(otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

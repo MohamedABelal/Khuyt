@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنتجات | خيوط — Khuyut</title>
+    <meta name="description" content="تصفحي مجموعة شنط خيوط المصنوعة يدوياً من الخرز والماكرامي.">
+    <meta property="og:title" content="المنتجات | خيوط — Khuyut">
+    <meta property="og:description" content="تصفحي مجموعة شنط خيوط المصنوعة يدوياً من الخرز والماكرامي.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <span class="brand-icon">🧶</span>
+                <span class="brand-name">خيوط</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link" data-key="home">الرئيسية</a></li>
+                <li><a href="shop.html" class="nav-link active" data-key="shop">المنتجات</a></li>
+                <li><a href="about.html" class="nav-link" data-key="about">قصتنا</a></li>
+                <li><a href="contact.html" class="nav-link" data-key="contact">تواصلي معانا</a></li>
+            </ul>
+            <div class="nav-actions">
+                </button>
+                <a href="https://wa.me/201097595196" class="btn btn-whatsapp nav-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-key="orderNow">اطلبي دلوقتي</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header text-center bg-light">
+            <div class="container">
+                <h1 data-key="shopTitle" data-ar="المنتجات" data-en="Shop">المنتجات</h1>
+                <div class="breadcrumb">
+                    <a href="index.html" data-key="home" data-ar="الرئيسية" data-en="Home">الرئيسية</a> <span>/</span> 
+                    <span data-key="shopTitle" data-ar="المنتجات" data-en="Shop">المنتجات</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="shop-controls flex-between mb-4">
+                    <div class="shop-filters">
+                        <button class="btn btn-filter active" data-filter="all" data-key="filterAll" data-ar="الكل" data-en="All">الكل</button>
+                        <button class="btn btn-filter" data-filter="beaded" data-key="filterBeaded" data-ar="خرز" data-en="Beaded">خرز</button>
+                        <button class="btn btn-filter" data-filter="macrame" data-key="filterMacrame" data-ar="ماكرامي" data-en="Macramé">ماكرامي</button>
+                        <button class="btn btn-filter" data-filter="mix" data-key="filterMix" data-ar="ميكس" data-en="Mix">ميكس</button>
+                    </div>
+                    <div class="shop-sort">
+                        <select class="sort-select" aria-label="Sort products">
+                            <option value="newest" data-key="sortNewest" data-ar="الأحدث" data-en="Newest">الأحدث</option>
+                            <option value="price-low" data-key="sortPriceLow" data-ar="السعر: من الأقل" data-en="Price: Low to High">السعر: من الأقل</option>
+                            <option value="price-high" data-key="sortPriceHigh" data-ar="السعر: من الأعلى" data-en="Price: High to Low">السعر: من الأعلى</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-grid" id="productsGrid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner text-center">
+            <div class="container">
+                <h2 data-key="ctaBannerText" data-ar="عايزة شنطة مميزة؟ كلمينا دلوقتي!" data-en="Want a unique bag? Chat with us now!">عايزة شنطة مميزة؟ كلمينا دلوقتي!</h2>
+                <a href="https://wa.me/201097595196" class="btn btn-whatsapp btn-lg mt-4" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-key="contactUsNow" data-ar="كلمينا دلوقتي" data-en="Chat Now">كلمينا دلوقتي</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <span class="brand-icon">🧶</span>
+                        <span class="brand-name">خيوط</span>
+                    </div>
+                    <p class="footer-desc" data-key="footerDesc" data-ar="شنط خرز وماكرامي مصنوعة يدوياً بحب في مصر. كل قطعة فريدة ومميزة." data-en="Handcrafted beaded & macramé bags made with love in Egypt. Each piece is unique.">شنط خرز وماكرامي مصنوعة يدوياً بحب في مصر. كل قطعة فريدة ومميزة.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="quickLinks" data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-key="home">الرئيسية</a></li>
+                        <li><a href="shop.html" data-key="shop">المنتجات</a></li>
+                        <li><a href="about.html" data-key="about">قصتنا</a></li>
+                        <li><a href="faq.html" data-key="faq">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="contactUs">تواصلي معانا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/201097595196" target="_blank">واتساب</a></li>
+                        <li><i class="fab fa-instagram"></i> <a href="#" target="_blank">@khuyut.bags</a></li>
+                        <li><i class="fab fa-facebook"></i> <a href="#" target="_blank">Khuyut</a></li>
+                        <li><i class="far fa-envelope"></i> <a href="mailto:hello@khuyut.com">hello@khuyut.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="followUs">تابعينا</h4>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-key="madeWithLove">صنع بحب في مصر 🇪🇬</p>
+                <p data-key="copyright">© 2026 خيوط — جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/201097595196?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B!%20%D8%B9%D8%A7%D9%8A%D8%B2%D8%A9%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A3%D9%83%D8%AA%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA" class="floating-whatsapp" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="floating-tooltip" data-key="contactUs">تواصلي معانا</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/products.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

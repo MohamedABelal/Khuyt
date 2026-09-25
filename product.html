@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المنتج | خيوط — Khuyut</title>
+    <meta name="description" content="اكتشفي تفاصيل منتجات خيوط اليدوية المميزة.">
+    <meta property="og:title" content="تفاصيل المنتج | خيوط — Khuyut">
+    <meta property="og:description" content="اكتشفي تفاصيل منتجات خيوط اليدوية المميزة.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <span class="brand-icon">🧶</span>
+                <span class="brand-name">خيوط</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link" data-key="home">الرئيسية</a></li>
+                <li><a href="shop.html" class="nav-link active" data-key="shop">المنتجات</a></li>
+                <li><a href="about.html" class="nav-link" data-key="about">قصتنا</a></li>
+                <li><a href="contact.html" class="nav-link" data-key="contact">تواصلي معانا</a></li>
+            </ul>
+            <div class="nav-actions">
+                </button>
+                <a href="https://wa.me/201097595196" class="btn btn-whatsapp nav-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-key="orderNow">اطلبي دلوقتي</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="breadcrumb mb-4">
+                    <a href="index.html" data-key="home" data-ar="الرئيسية" data-en="Home">الرئيسية</a> <span>/</span> 
+                    <a href="shop.html" data-key="shopTitle" data-ar="المنتجات" data-en="Shop">المنتجات</a> <span>/</span> 
+                    <span id="breadcrumbProductName" class="current">تفاصيل المنتج</span>
+                </div>
+
+                <div class="product-detail flex-wrap">
+                    <div class="product-gallery">
+                        <img src="" alt="Main Product Image" id="mainImage" class="main-image">
+                        <div class="thumbnail-row" id="thumbnailRow">
+                            <!-- Thumbnails JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="product-info-detail">
+                        <div id="productBadgeContainer"></div>
+                        <h1 id="productName" class="product-title">اسم المنتج</h1>
+                        <h2 id="productPrice" class="product-price">السعر</h2>
+                        <p id="productDesc" class="product-desc">وصف المنتج</p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-key="specSize" data-ar="المقاسات:" data-en="Dimensions:">المقاسات:</span>
+                                <span id="productSize" class="spec-value">--</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-key="specMaterial" data-ar="الخامات:" data-en="Material:">الخامات:</span>
+                                <span id="productMaterial" class="spec-value">--</span>
+                            </div>
+                        </div>
+
+                        <div class="product-actions mt-4">
+                            <a href="#" id="productWhatsapp" class="btn btn-whatsapp btn-lg" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-key="orderOnWhatsapp" data-ar="اطلبي على واتساب" data-en="Order on WhatsApp">اطلبي على واتساب</span>
+                            </a>
+                            <button class="btn btn-secondary btn-icon" id="wishlistBtn" aria-label="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title text-center" data-key="youMayAlsoLike" data-ar="ممكن يعجبك كمان" data-en="You May Also Like">ممكن يعجبك كمان</h2>
+                <div class="products-grid" id="similarProducts">
+                    <!-- Similar Products JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <span class="brand-icon">🧶</span>
+                        <span class="brand-name">خيوط</span>
+                    </div>
+                    <p class="footer-desc" data-key="footerDesc" data-ar="شنط خرز وماكرامي مصنوعة يدوياً بحب في مصر. كل قطعة فريدة ومميزة." data-en="Handcrafted beaded & macramé bags made with love in Egypt. Each piece is unique.">شنط خرز وماكرامي مصنوعة يدوياً بحب في مصر. كل قطعة فريدة ومميزة.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="quickLinks" data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-key="home">الرئيسية</a></li>
+                        <li><a href="shop.html" data-key="shop">المنتجات</a></li>
+                        <li><a href="about.html" data-key="about">قصتنا</a></li>
+                        <li><a href="faq.html" data-key="faq">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="contactUs">تواصلي معانا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/201097595196" target="_blank">واتساب</a></li>
+                        <li><i class="fab fa-instagram"></i> <a href="#" target="_blank">@khuyut.bags</a></li>
+                        <li><i class="fab fa-facebook"></i> <a href="#" target="_blank">Khuyut</a></li>
+                        <li><i class="far fa-envelope"></i> <a href="mailto:hello@khuyut.com">hello@khuyut.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="followUs">تابعينا</h4>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-key="madeWithLove">صنع بحب في مصر 🇪🇬</p>
+                <p data-key="copyright">© 2026 خيوط — جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/201097595196?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B!%20%D8%B9%D8%A7%D9%8A%D8%B2%D8%A9%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A3%D9%83%D8%AA%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA" class="floating-whatsapp" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="floating-tooltip" data-key="contactUs">تواصلي معانا</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/products.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
